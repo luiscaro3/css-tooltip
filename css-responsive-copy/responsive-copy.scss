@@ -1,0 +1,11 @@
+[data-copy-desktop]:after {
+    content: attr(data-copy-desktop);
+    display: inline;
+}
+
+[data-copy-mobile]:after {
+    @media (max-width: 480px) {
+        content: attr(data-copy-mobile);
+    }
+}
+

@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS Responsive Copy</title>
+		<link rel="stylesheet" href="./responsive-copy.css">
+	</head>
+
+    <style>
+        body {
+            font-size: 21px;
+            line-height: 1.2;
+        }
+
+        .my-container {
+            max-width: 800px; 
+            margin:auto;
+            width: 90%; 
+        }
+
+        button {
+            padding: 15px;
+            font-size: large;            
+        }
+        
+        @media (max-width: 480px) {
+            button {
+                margin: auto;
+                width: 100%;
+            }
+        }
+
+    </style>
+
+	<body>
+		<div class="my-container">
+			<p>This is a static copy, nothing has been implemented in this text. However, go ahead and resize the screen till you reach the mobile viewport and see how the copy on the button changes. No JS involved, just blazing fast native browser functionality.</p>
+            <button 
+                data-copy-desktop="Yes, I read the agreement and I agree"
+                data-copy-mobile="Yes, I agree"></button>
+		</div>
+	</body>
+</html>
